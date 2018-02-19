@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="333,25,0,0" Text="Glazer Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="363" Height="74" FontSize="48"/>
+        <TextBox x:Name="widthBox" HorizontalAlignment="Left" Margin="408,125,0,0" Text="" VerticalAlignment="Top" Width="211" Height="36" PlaceholderText="Enter Width" InputScope="Number" TextChanged="widthBox_TextChanged" />
+        <TextBox x:Name="heightBox" HorizontalAlignment="Left" Margin="408,175,0,0" Text="" VerticalAlignment="Top" Width="211" Height="36" PlaceholderText="Enter Height" InputScope="Number" TextChanged="heightBox_TextChanged"/>
+        <ComboBox x:Name="tintBox" HorizontalAlignment="Left" Margin="408,276,0,0" VerticalAlignment="Top" Width="210" Height="36" IsDropDownOpen="False" PlaceholderText="Tint Color">
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Brown"/>
+            <ComboBoxItem Content="Blue"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="422,375,0,0" Text="Select Quantity" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="37" FontSize="24"/>
+        <Slider x:Name="quantitySlider" HorizontalAlignment="Left" Margin="405,425,0,0" VerticalAlignment="Top" Width="211"/>
+        <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="408,500,0,0" VerticalAlignment="Top" Width="208" Height="49" FontSize="24" Click="calculateButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="408,566,0,0" VerticalAlignment="Top" Width="208" Height="49" FontSize="24" Click="cancelButton_Click"/>
 
     </Grid>
 </Page>
